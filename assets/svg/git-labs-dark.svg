@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="100" viewBox="0 0 830 100">
+  <defs>
+    <style type="text/css">
+      @font-face {
+        font-family: 'Nexa Rust Slab';
+        src: url("https://github.com/nirgeier/labs-assets/raw/refs/heads/main/assets/fonts/NexaRustSans-Black.otf") format('otf');
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="830" height="100" fill="#000000" />
+
+  <!-- Text using custom font -->
+  <text x="10" y="50%" font-family="'Nexa Rust Slab', serif" text-anchor="middle" dominant-baseline="middle" font-size="44" fill="#FFFFFF">
+    Git Course Labs2
+  </text>
+</svg>
