@@ -1,0 +1,786 @@
+/* @theme CodeWizard */
+/* palette in :root */
+
+@charset "UTF-8";
+
+@import "default";
+@import "schema";
+@import "structure";
+
+:root {
+  --base: #faf4ed;
+  --surface: #fffaf3;
+  --overlay: #f2e9e1;
+  --muted: #9893a5;
+  --subtle: #797593;
+  --text: #575279;
+  --love: #b4637a;
+  --gold: #ea9d34;
+  --rose: #d7827e;
+  --pine: #286983;
+  --foam: #56949f;
+  --iris: #907aa9;
+  --highlight-low: #f4ede8;
+  --highlight-muted: #dfdad9;
+  --highlight-high: #cecacd;
+
+  font-family: "JetBrains Mono", "Roboto Mono", monospace;
+  font-weight: initial;
+
+  background-color: var(--base);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap");
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #000;
+  color: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #aeaeae;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+  color: #e28964;
+}
+
+.hljs-string {
+  color: #65b042;
+}
+
+.hljs-subst {
+  color: #daefa3;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #e9c062;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-tag,
+.hljs-name {
+  color: #89bdff;
+}
+
+.hljs-class .hljs-title,
+.hljs-doctag {
+  text-decoration: underline;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-number {
+  color: #3387cc;
+}
+
+.hljs-params,
+.hljs-variable,
+.hljs-template-variable {
+  color: #3e87e3;
+}
+
+.hljs-attribute {
+  color: #cda869;
+}
+
+.hljs-meta {
+  color: #8996a8;
+}
+
+.hljs-formula {
+  background-color: #0e2231;
+  color: #f8f8f8;
+  font-style: italic;
+}
+
+.hljs-addition {
+  background-color: #253b22;
+  color: #f8f8f8;
+}
+
+.hljs-deletion {
+  background-color: #420e09;
+  color: #f8f8f8;
+}
+
+.hljs-selector-class {
+  color: #9b703f;
+}
+
+.hljs-selector-id {
+  color: #8b98ab;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+svg[data-marp-fitting="svg"] {
+  max-height: 580px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0 0 0;
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+
+p,
+blockquote {
+  margin: 1em 0 0 0;
+}
+
+ul > li,
+ol > li {
+  margin: 0.3em 0 0 0;
+}
+
+ul > li > p,
+ol > li > p {
+  margin: 0.6em 0 0 0;
+}
+
+code {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+  letter-spacing: 0;
+  margin: -0.1em 0.15em;
+  padding: 0.1em 0.2em;
+  vertical-align: baseline;
+}
+
+pre {
+  display: block;
+  margin: 1em 0 0 0;
+  min-height: 1em;
+  overflow: visible;
+}
+
+pre code {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 100%;
+  padding: 0.5em;
+  font-size: 0.7em;
+}
+
+pre code svg[data-marp-fitting="svg"] {
+  max-height: calc(580px - 1em);
+}
+
+blockquote {
+  position: relative;
+  display: inline-block;
+  color: #f23827;
+  margin: 0 0 0 40px;
+  padding: 5px 40px;
+  border-left: 10px solid orange;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+blockquote::after,
+blockquote::before {
+  content: "“";
+  margin: 0 20px;
+  display: inline-block;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  position: absolute;
+}
+
+blockquote::before {
+  top: 0;
+  left: 0;
+}
+
+blockquote::after {
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+blockquote > *:first-child {
+  margin-top: 0;
+}
+
+mark {
+  background: transparent;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 1em 0 0 0;
+}
+
+table th,
+table td {
+  padding: 0.2em 0.4em;
+  border-width: 1px;
+  border-style: solid;
+}
+
+section {
+  background-image: linear-gradient(
+    135deg,
+    rgba(136, 136, 136, 0),
+    rgba(136, 136, 136, 0.02) 50%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.05)
+  );
+  font-size: 28px;
+  font-family: "Lato", "Avenir Next", "Avenir", "Trebuchet MS", "Segoe UI", sans-serif;
+  height: 720px;
+  line-height: 1.35;
+  letter-spacing: 1.25px;
+  padding: 70px;
+  width: 1280px;
+  color: #699bc4;
+  background-color: #fff8e1;
+}
+
+section > *:first-child,
+section > header:first-child + * {
+  margin-top: 0;
+}
+
+section a,
+section mark {
+  color: #0288d1;
+}
+
+section code {
+  /*background: $color-dark;
+        color: snow;
+        */
+  border-radius: 5px;
+  padding: 0 7px;
+}
+
+section h1 strong,
+section h2 strong,
+section h3 strong,
+section h4 strong,
+section h5 strong,
+section h6 strong {
+  color: #0288d1;
+}
+
+section pre > code {
+  background: black;
+  color: white;
+  font-family: "Consolas";
+}
+
+section header,
+section footer,
+section section::after,
+section blockquote::before,
+section blockquote::after {
+  color: #87adca;
+}
+
+section table th,
+section table td {
+  border-color: #699bc4;
+}
+
+section table thead th {
+  background: #699bc4;
+  color: #fff8e1;
+  border: white;
+}
+
+section table tbody > tr:nth-child(even) td,
+section table tbody > tr:nth-child(even) th {
+  background: rgba(105, 155, 196, 0.2);
+}
+
+section.gaia {
+  color: #fff8e1;
+  background-color: #0288d1;
+}
+
+section.gaia a,
+section.gaia mark {
+  color: #81d4fa;
+}
+
+section.gaia code {
+  /*background: $color-dark;
+        color: snow;
+        */
+  border-radius: 5px;
+  padding: 0 7px;
+}
+
+section.gaia h1 strong,
+section.gaia h2 strong,
+section.gaia h3 strong,
+section.gaia h4 strong,
+section.gaia h5 strong,
+section.gaia h6 strong {
+  color: #81d4fa;
+}
+
+section.gaia pre > code {
+  background: black;
+  color: white;
+  font-family: "Consolas";
+}
+
+section.gaia header,
+section.gaia footer,
+section.gaia section::after,
+section.gaia blockquote::before,
+section.gaia blockquote::after {
+  color: #cce2de;
+}
+
+section.gaia table th,
+section.gaia table td {
+  border-color: #fff8e1;
+}
+
+section.gaia table thead th {
+  background: #fff8e1;
+  color: #0288d1;
+  border: white;
+}
+
+section.gaia table tbody > tr:nth-child(even) td,
+section.gaia table tbody > tr:nth-child(even) th {
+  background: rgba(255, 248, 225, 0.2);
+}
+
+section.lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section.lead h1,
+section.lead h2,
+section.lead h3,
+section.lead h4,
+section.lead h5,
+section.lead h6 {
+  text-align: center;
+}
+
+section.lead h1 svg[data-marp-fitting="svg"],
+section.lead h2 svg[data-marp-fitting="svg"],
+section.lead h3 svg[data-marp-fitting="svg"],
+section.lead h4 svg[data-marp-fitting="svg"],
+section.lead h5 svg[data-marp-fitting="svg"],
+section.lead h6 svg[data-marp-fitting="svg"] {
+  --preserve-aspect-ratio: xMidYMid meet;
+}
+
+section.lead p {
+  text-align: center;
+}
+
+section.lead blockquote > h1,
+section.lead blockquote > h2,
+section.lead blockquote > h3,
+section.lead blockquote > h4,
+section.lead blockquote > h5,
+section.lead blockquote > h6,
+section.lead blockquote > p {
+  text-align: left;
+}
+
+section.lead blockquote svg[data-marp-fitting="svg"]:not([data-marp-fitting-math]) {
+  --preserve-aspect-ratio: xMinYMin meet;
+}
+
+section.lead ul > li > p,
+section.lead ol > li > p {
+  text-align: left;
+}
+
+section.lead table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header,
+footer,
+section::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 66%;
+  height: 70px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 10px 25px;
+  position: absolute;
+}
+
+header {
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer div {
+  text-align: center;
+  line-height: 15px;
+  color: black;
+  font-family: "Roboto";
+  padding: 15px 0 0 0;
+}
+
+footer div sub {
+  font-size: 14px;
+}
+
+section::after {
+  right: 0;
+  bottom: 0;
+  font-size: 80%;
+}
+
+.font-12,
+section.font-12 {
+  font-size: 12px;
+}
+
+.font-13,
+section.font-13 {
+  font-size: 13px;
+}
+
+.font-14,
+section.font-14 {
+  font-size: 14px;
+}
+
+.font-15,
+section.font-15 {
+  font-size: 15px;
+}
+
+.font-16,
+section.font-16 {
+  font-size: 16px;
+}
+
+.font-17,
+section.font-17 {
+  font-size: 17px;
+}
+
+.font-18,
+section.font-18 {
+  font-size: 18px;
+}
+
+.font-19,
+section.font-19 {
+  font-size: 19px;
+}
+
+.font-20,
+section.font-20 {
+  font-size: 20px;
+}
+
+.font-21,
+section.font-21 {
+  font-size: 21px;
+}
+
+.font-22,
+section.font-22 {
+  font-size: 22px;
+}
+
+.font-23,
+section.font-23 {
+  font-size: 23px;
+}
+
+.font-24,
+section.font-24 {
+  font-size: 24px;
+}
+
+.font-25,
+section.font-25 {
+  font-size: 25px;
+}
+
+.font-26,
+section.font-26 {
+  font-size: 26px;
+}
+
+.font-27,
+section.font-27 {
+  font-size: 27px;
+}
+
+.font-28,
+section.font-28 {
+  font-size: 28px;
+}
+
+.font-29,
+section.font-29 {
+  font-size: 29px;
+}
+
+.font-30,
+section.font-30 {
+  font-size: 30px;
+}
+
+.font-31,
+section.font-31 {
+  font-size: 31px;
+}
+
+.font-32,
+section.font-32 {
+  font-size: 32px;
+}
+
+section.columns-2 {
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+section.columns-3 {
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
+section.columns-4 {
+  -webkit-column-count: 4;
+  column-count: 4;
+}
+
+table {
+  display: inline-block;
+}
+
+.fas {
+  text-align: center;
+}
+
+section.nobg::before {
+  background-image: none;
+}
+
+section.unix::before {
+  background: url("/images/unix-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+section.users::before {
+  background: url("/images/users.png") center no-repeat;
+  -webkit-filter: opacity(0.1);
+  filter: opacity(0.1);
+  background-size: 20%;
+}
+
+section.bash::before {
+  background: url("/images/bash.png") center no-repeat;
+  background-size: 80%;
+}
+
+section.history::before {
+  background: black url("/images/History.jpg") center no-repeat;
+  background-size: 100%;
+  -webkit-filter: opacity(1);
+  filter: opacity(1);
+}
+
+section.bg_white {
+  background-color: white;
+}
+
+section {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: -1px;
+  position: relative;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-filter: opacity(0.05);
+  filter: opacity(0.05);
+}
+
+section::after {
+  font-size: 50%;
+}
+
+.columns {
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+.center {
+  width: 750px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #26428c;
+}
+
+.no-border {
+  border: none !important;
+}
+
+ol li {
+  list-style-type: none;
+}
+
+.numbered ol li {
+  list-style-type: decimal;
+}
+
+section.text-center {
+  text-align: center;
+}
+
+section.header-yellow h1 {
+  color: white !important;
+  padding: 30px 0;
+  border: 0;
+}
+
+kbd {
+  font-family: "Consolas", "Lucida Console", monospace;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0px 7px;
+  -webkit-box-shadow: 0 2px 2px black;
+  box-shadow: 0 2px 2px black;
+  margin: 2px;
+  vertical-align: text-bottom;
+  background: #dddddd;
+  color: black;
+  cursor: pointer;
+  font-variant: small-caps;
+  /* Prevent selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  margin: 0 50px;
+  background:
+    url("/images/codeWizard-logo-sm.png") left no-repeat,
+    url("/images/codeWizard-logo-sm.png") right no-repeat;
+}
+
+.bespoke-marp-parent > .bespoke-marp-osc {
+  bottom: 75px;
+}
