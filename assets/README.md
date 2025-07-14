@@ -12,3 +12,5 @@
 |well_done.jpg|https://raw.githubusercontent.com/nirgeier/labs-assets/main/assets/images/well_done.jpg| ![](https://github.com/nirgeier/labs-assets/blob/main/assets/preview/well_done.jpg.png)|
 |code-wizard-training.png|https://raw.githubusercontent.com/nirgeier/labs-assets/main/assets/images/code-wizard-training.png| ![](https://github.com/nirgeier/labs-assets/blob/main/assets/preview/code-wizard-training.png.png)|
 |star.png|https://raw.githubusercontent.com/nirgeier/labs-assets/main/assets/images/star.png| ![](https://github.com/nirgeier/labs-assets/blob/main/assets/preview/star.png.png)|
+|git-github.png|https://raw.githubusercontent.com/nirgeier/labs-assets/main/assets/images/git-github.png| ![](https://github.com/nirgeier/labs-assets/blob/main/assets/preview/git-github.png.png)|
+|codeWizard.png|https://raw.githubusercontent.com/nirgeier/labs-assets/main/assets/images/codeWizard.png| ![](https://github.com/nirgeier/labs-assets/blob/main/assets/preview/codeWizard.png.png)|
